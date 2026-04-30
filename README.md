@@ -12,7 +12,7 @@ A professional and modern business platform developed for **A1webservice**. This
 ## 📖 Project Overview
 The objective of this project was to build a high-converting landing page for an IT service provider. It highlights various digital services, client portfolios, and professional expertise in the tech industry.
 
-![A1webservice Portfolio](https://res.cloudinary.com/dmmiuobkh/image/upload/v1773210174/ab2_bnsitc.png)
+![A1webservice Portfolio](https://res.cloudinary.com/dmmiuobkh/image/upload/v1770979153/blog1_x0cjco.png)
 
 ### Key Features:
 *   **Service Catalog:** Structured display of Web Development, App Development, and SEO services.
