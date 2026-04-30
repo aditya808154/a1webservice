@@ -1,0 +1,173 @@
+.courses-wrapper {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    background-color: #f9fbff;
+    text-align: center;
+    display: block;
+    overflow: hidden;
+}
+
+.other-section {
+    margin-top: 0px !important;
+    margin-bottom: 10px !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+.section-header {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+.section-header h3 {
+    font-size: 46px;
+    color: #001f3f;
+    margin-top: 0px !important; 
+    margin-bottom: 0px !important;
+    font-weight: 800;
+    line-height: 1.2;
+    
+}
+
+
+.section-header span {
+    color: #ff8c00;
+}
+
+.section-header p {
+    margin-top: 5px !important;
+    margin-bottom: 15px !important; 
+    color: #666;
+    font-size: 1rem;
+    padding: 0 !important;
+}
+
+.course-slider-container {
+    max-width: 1200px;
+    margin-top: 0px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-top: 0px !important;
+    padding-bottom: 35px !important;
+}
+
+.course-slide {
+    height: auto !important;
+    display: flex !important;
+}
+
+.other-card {
+    background: white;
+    padding: 20px 20px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    transition: all 0.3s ease;
+    box-shadow: 10px 5px 30px 5px rgba(26, 43, 75, 0.18) !important;
+}
+
+.other-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 5px 30px 1px #1a3a8f !important;
+}
+
+.course-icon {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 15px;
+    object-fit: contain;
+}
+
+.card-title {
+    font-size: 1rem;
+    color: #001f3f;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.card-duration {
+    font-size: 0.8rem;
+    color: #666;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.features-container {
+    text-align: left;
+    width: 100%;
+    flex-grow: 1;
+    margin-bottom: 25px;
+}
+
+.feature-item {
+    color: #555;
+    font-size: 0.8rem;
+    line-height: 1.6;
+    display: flex;
+    align-items: flex-start;
+}
+
+.tick-icon {
+    color: #ff8c00;
+    margin-right: 8px;
+    font-weight: bold;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: auto;
+}
+
+.price-label {
+    background-color: #f8f9fa;
+    color: #001f3f;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    border: 1px dashed #ccc;
+    font-size: 0.8rem;
+}
+
+.other-whatsapp-btn {
+    background-color: #ff851b;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background 0.3s;
+    display: inline-block;
+    border: none;
+    padding: 10px 20px;
+    font-size: 0.7rem;
+    width: auto;
+}
+
+.other-whatsapp-btn:hover {
+    background-color: #1a2b4b;
+}
+
+.swiper-pagination-bullet-active {
+    background: #ff8c00 !important;
+}
+
+.loading-text {
+    text-align: center; 
+    padding: 50px;
+    font-size: 1.2rem;
+    color: #001f3f;
+}
+
+@media screen and (max-width: 768px) {
+    .courses-wrapper { padding: 0px 15px !important; }
+    .section-header h3 { font-size: 32px; }
+    .course-slider-container { margin: 0 auto !important; padding-bottom: 25px !important; }
+}

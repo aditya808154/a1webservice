@@ -1,0 +1,204 @@
+.main-footer {
+  background-color: #001f3f;
+  color: #ffffff;
+  padding: 60px 5% 0 5%; /* Top padding thodi badhayi hai logo ke liye */
+  font-family: 'Poppins', sans-serif;
+  border-top: 1px solid #f0f0f0;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 40px;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+/* --- LOGO STYLING (Same as Navbar) --- */
+.footer-logo-brand h1 {
+  color: #ffffff; /* Navy Blue */
+  font-size: 24px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+#w{
+  color: #ffffff;
+}
+
+.footer-logo-brand h1 span {
+  color: #ff851b; /* Orange */
+}
+
+.footer-col h3 {
+  font-size: 18px;
+  color: #1a2b4b;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+.footer-col p {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #555555;
+}
+
+/* --- SOCIAL MEDIA LINKS --- */
+.social-links {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.social-icon {
+  width: 36px;
+  height: 36px;
+  background-color: #f4f4f4;
+  color: #001f3f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: 0.3s ease;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  background-color: #ff851b;
+  color: #ffffff;
+  transform: translateY(-3px);
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  font-size: 14px;
+  margin-bottom: 12px;
+  color: #555555;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.footer-col ul li:hover {
+  color: #ff851b;
+  
+}
+
+.contact-info p {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #555555;
+}
+
+.footer-bottom {
+  border-top: 1px solid #f0f0f0;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  z-index: 1000;
+  color: #ff851b;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+}
+.contact-info p {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* Icon aur text ke beech space */
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #555555;
+}
+
+.contact-icon {
+  color: #ff851b; /* Orange color for icons */
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  min-width: 20px; /* Saare icons ek line mein align rahenge */
+}
+
+/* Hover karne par icon thoda glow karega */
+.contact-info p:hover .contact-icon {
+  color: #001f3f; /* Dark Blue on hover */
+  transition: 0.3s;
+}
+.footer-col ul li a {
+  text-decoration: none;
+  color: inherit; /* Text color wahi rahega jo pehle tha */
+  transition: 0.3s;
+}
+
+.footer-col ul li a:hover {
+  color: #ff851b; /* Hover karne par color change hoga */
+  padding-left: 5px; /* Thoda animation effect ke liye */
+}
+
+/* Call Float Style */
+.call-float {
+  display: none; /* Desktop par hide rahega */
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 90px; /* WhatsApp icon ke upar dikhane ke liye height zyada rakhi hai */
+  right: 20px;
+  background-color: #001f3f; /* Call ke liye Blue color */
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+.call-float img {
+  width: 25px;
+  height: 25px;
+  margin-top: 12px;
+  filter: invert(1); /* Black icon ko white karne ke liye */
+}
+
+/* WhatsApp Float (Already exists, but for reference) */
+.whatsapp-float {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50px;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Mobile Only Show Logic */
+@media screen and (max-width: 768px) {
+  .call-float {
+    display: block; /* Sirf mobile par show hoga */
+  }
+}
+

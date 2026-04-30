@@ -1,0 +1,168 @@
+.courses-wrapper {
+    padding-top: 20px !important;
+    padding-bottom: 0px !important;
+    margin: 0 !important;
+    background-color: #f9fbff;
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+}
+
+.home-contact {
+    padding-bottom: 60px !important;
+}
+
+.section-header h3 {
+    font-size: 46px;
+    color: #001f3f;
+    margin-bottom: 10px !important;
+    font-weight: 800;
+}
+
+.section-header span {
+    color: #ff8c00;
+}
+
+.contact-main-container {
+    max-width: 1200px;
+    margin: 30px auto 0 !important;
+    padding: 0 15px; /* Mobile ke liye padding thodi kam ki */
+}
+
+.contact-card { 
+    background: #001f3f; 
+    color: white; 
+    padding: 60px; 
+    border-radius: 30px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    gap: 40px; 
+    box-shadow: 0 20px 40px rgba(10, 29, 55, 0.2);
+    position: relative;
+    text-align: left;
+}
+
+.info-side { flex: 1.2; width: 100%; }
+
+.badge {
+    background: rgba(255, 140, 0, 0.2);
+    color: #ff8c00;
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.info-side h2 { font-size: 40px; margin-bottom: 15px; line-height: 1.2; font-weight: 800; }
+.info-side h2 span { color: #ff8c00; }
+.info-side p { font-size: 16px; color: #cbd5e0; margin-bottom: 30px; }
+
+/* Buttons Container */
+.quick-contact-btns { 
+    display: flex; 
+    gap: 15px; 
+    flex-wrap: wrap; /* Taki mobile par space na hone par buttons auto-adjust ho jayein */
+    padding: 7px 9px;
+}
+
+.q-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Text center karne ke liye */
+    gap: 8px;
+    padding: 8px 9px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.3s;
+    font-size: 14px;
+    min-width: 150px; /* Buttons ka size barabar rakhne ke liye */
+}
+
+.whatsapp { background: #25d366; color: white; }
+.call { background: #fff; color: #001f3f; }
+.q-btn:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
+
+/* Form Side */
+.form-side { flex: 0.8; width: 100%; }
+.form-container {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.input-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ff8c00;
+}
+
+.input-box input { 
+    width: 100%;
+    padding: 14px 14px 14px 45px;
+    background: rgba(255, 255, 255, 0.1); 
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    color: white;
+    outline: none;
+    transition: 0.3s;
+    box-sizing: border-box; /* Padding ko width ke andar adjust karne ke liye */
+}
+
+.contact-btn { 
+    width: 100%;
+    background: #ff8c00; 
+    color: white; 
+    border: none; 
+    padding: 8px 9px; 
+    border-radius: 10px; 
+    font-weight: 700; 
+    cursor: pointer; 
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* --- FIX FOR MOBILE SCREENS --- */
+@media screen and (max-width: 1024px) {
+    .contact-card { 
+        flex-direction: column; 
+        padding: 40px 30px; 
+        text-align: center; 
+    }
+    .quick-contact-btns { justify-content: center; }
+    .info-side h2 { font-size: 36px; }
+    .form-side { max-width: 100%; }
+}
+
+@media screen and (max-width: 480px) {
+    .section-header h3 { font-size: 28px; }
+    .info-side h2 { font-size: 26px; }
+    .contact-card { 
+        padding: 30px 15px; /* Kam space mein fit karne ke liye */
+        border-radius: 15px;
+    }
+    .quick-contact-btns { 
+        flex-direction: column; 
+        width: 100%; 
+        gap: 10px;
+    }
+    .q-btn { width: 100%; }
+    .form-container { padding: 20px 15px; }
+    .input-box input { font-size: 14px; }
+}

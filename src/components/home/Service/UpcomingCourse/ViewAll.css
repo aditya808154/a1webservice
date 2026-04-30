@@ -1,0 +1,180 @@
+.view-all-wrapper {
+  background-color: #f8f9fa; /* Thoda light grey background taaki Navy cards uth kar dikhen */
+  padding: 60px 20px;
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+}
+
+.view-all-container {
+  margin-top: 70px;
+  width: 100%;
+}
+
+/* --- HEADING CENTERED --- */
+.title-section-wrapper {
+  text-align: center;
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+.main-page-title {
+  color: #001f3f; /* Navy Blue color for main title */
+  font-size: 1.8rem;
+  font-weight: 900;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.title-accent-line {
+  width: 80px;
+  height: 5px;
+  background: #ff8c00;
+  margin: 0 auto;
+}
+
+/* GRID SECTION */
+.items-grid-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+/* --- CARD SYSTEM NAVY BLUE --- */
+.course-event-card {
+  background: #001f3f; /* NAVY BLUE BACKGROUND */
+  border-radius: 15px;
+  display: flex;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255,255,255,0.05); /* Soft border */
+  height: 240px; /* Slight height adjustment for content */
+}
+
+.course-event-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+}
+
+/* IMAGE SETTINGS */
+.card-image-box {
+  flex: 1;
+  overflow: hidden; /* Image bahar na nikle */
+}
+
+.card-image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Image stretch nahi hogi */
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.course-event-card:hover .card-image-box img {
+  transform: scale(1.1); /* Hover par image zoom effect */
+}
+
+/* TEXT BOX SETTINGS */
+.card-info-box {
+  flex: 1.6;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #ffffff; /* White text for Navy Blue background */
+}
+
+.status-tag {
+  color: #ff8c00; /* Orange highlight */
+  font-weight: 800;
+  font-size: 0.75rem;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  letter-spacing: 1px;
+}
+
+.card-main-title {
+  font-size: 1.2rem;
+  color: #ffffff !important; /* Title white */
+  margin-bottom: 8px;
+  font-weight: 800;
+}
+
+.card-quick-meta {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+  font-size: 0.8rem;
+  color: #ffb400; /* Goldish color for icons and meta */
+  font-weight: 600;
+}
+
+.card-quick-meta i {
+  color: #ffb400;
+}
+
+.card-description-text {
+  font-size: 0.85rem;
+  color: #d1d1d1; /* Soft greyish white for description */
+  line-height: 1.4;
+  margin-bottom: 15px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.card-read-more {
+  color: #00d4ff; /* Bright blue link for contrast */
+  text-decoration: none;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  border-bottom: 2px solid transparent;
+  width: fit-content;
+  transition: 0.3s;
+}
+
+.card-read-more:hover {
+  color: #ffffff;
+  border-bottom: 2px solid #ff8c00;
+}
+
+/* --- RESPONSIVE SYSTEM --- */
+
+@media (max-width: 1024px) {
+  .items-grid-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-page-title {
+    font-size: 1.8rem;
+  }
+
+  .course-event-card {
+    flex-direction: column;
+    height: auto; 
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .card-image-box {
+    height: 220px;
+    width: 100%;
+  }
+
+  .card-info-box {
+    padding: 25px;
+    align-items: center;
+  }
+  
+  .card-quick-meta {
+    justify-content: center;
+  }
+}

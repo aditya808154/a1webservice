@@ -1,0 +1,148 @@
+/* Zero Gap Wrapper */
+.courses-wrapper {
+    padding-top: 40px !important;
+    padding-bottom: 20px !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    background-color: #f9fbff;
+    text-align: center;
+    overflow: hidden;
+}
+
+.intro-section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header Styling - Matching Online Style */
+.section-header h3 {
+    font-size: clamp(26px, 5vw, 46px);
+    color: #0a1d37;
+    margin-bottom: 15px !important;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.section-header span {
+    color: #ff8c00;
+}
+
+/* Divider Line */
+.title-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.title-divider .line {
+    width: 60px;
+    height: 3px;
+    background-color: #ff8c00;
+    border-radius: 2px;
+}
+
+.hat-icon {
+    font-size: 22px;
+}
+
+.service-intro-text {
+    color: #444;
+    line-height: 1.8;
+    font-size: 16px;
+    max-width: 1000px;
+    margin: 0 auto 40px auto;
+    text-align: center;
+    padding: 0 15px;
+}
+
+/* Buttons Section - Updated to match Orange Theme */
+.requirements-section {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.teal-button {
+    background-color: #0a1d37; /* Dark Blue */
+    color: white;
+    padding: 14px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    border: 2px solid transparent;
+    box-shadow: 0 4px 10px rgba(10, 29, 55, 0.15);
+}
+
+.teal-button:hover {
+    background-color: #ff8c00; /* Orange on Hover */
+    transform: translateY(-3px);
+    color: white;
+}
+
+/* --- Responsive Settings --- */
+
+@media (max-width: 992px) {
+    .button-container {
+        flex-wrap: wrap;
+    }
+    .teal-button {
+        width: calc(50% - 20px);
+        min-width: 180px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .courses-wrapper {
+        padding-top: 30px !important;
+    }
+    
+    .section-header h3 {
+        font-size: 28px;
+        padding: 0 10px;
+    }
+
+    .service-intro-text {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .button-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* 2 Buttons in a row */
+        gap: 12px;
+        padding: 0 15px;
+    }
+
+    .teal-button {
+        width: 100%;
+        font-size: 13px;
+        padding: 12px 10px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .button-container {
+        grid-template-columns: 1fr; /* Full width buttons on very small screens */
+    }
+    .teal-button {
+        padding: 15px;
+    }
+}

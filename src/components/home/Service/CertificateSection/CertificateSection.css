@@ -1,0 +1,116 @@
+/* Container reset jaisa OnlineCourses mein tha */
+.courses-wrapper {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    background-color: #f9fbff;
+    text-align: center;
+    overflow: hidden;
+}
+
+.other-section {
+    margin-top: 0px !important;
+    margin-bottom: 20px !important;
+    padding: 0px 20px !important;
+}
+
+.section-header h3 {
+    font-size: 46px;
+    color: #001f3f;
+    margin-top: 0px !important; 
+    margin-bottom: 0px !important;
+    font-weight: 800;
+}
+
+.section-header span {
+    color: #ff8c00;
+}
+
+.cert-container {
+    max-width: 1200px;
+    margin: 40px auto !important;
+    padding-bottom: 0px;
+}
+
+.cert-content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    text-align: left;
+}
+
+.cert-image-box {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.main-cert-img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.cert-info-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.cert-point-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.cert-icon-circle {
+    min-width: 50px;
+    height: 50px;
+    border: 2px solid #001f3f;
+    border-radius: 50%;
+    position: relative;
+}
+
+/* Icon ke andar ki lines (design jaisa dikhne ke liye) */
+.cert-icon-circle::before {
+    content: '✓';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #001f3f;
+    font-weight: bold;
+}
+
+.cert-text h4 {
+    font-size: 1.2rem;
+    color: #001f3f;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.cert-text p {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Responsive */
+@media screen and (max-width: 992px) {
+    .cert-content-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+    .cert-point-item {
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-header h3 {
+        font-size: 32px;
+    }
+}

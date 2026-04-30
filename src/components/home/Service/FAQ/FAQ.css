@@ -1,0 +1,164 @@
+.courses-wrapper {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    background-color: #f9fbff;
+    text-align: center;
+    overflow: hidden;
+}
+
+.other-section {
+    margin-top: 0px !important;
+    padding-top: 0px !important;
+    padding-bottom: 40px !important;
+}
+
+.section-header h3 {
+    font-size: 46px;
+    color: #001f3f;
+    margin-bottom: 10px !important;
+    font-weight: 800;
+}
+
+.section-header span {
+    color: #ff8c00;
+}
+
+.faq-main-container {
+    max-width: 900px;
+    margin: 0 auto !important;
+    text-align: left;
+    padding: 0 20px;
+}
+
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.faq-card-item {
+    background: white;
+    border-radius: 10px;
+    border: 1px solid #eef2f6;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.faq-card-item.active {
+    border-left: 4px solid #ff8c00;
+}
+
+.faq-question-box {
+    padding: 20px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.faq-question-box p {
+    font-weight: 700;
+    color: #001f3f;
+    margin: 0;
+    font-size: 1.05rem;
+}
+
+.faq-toggle-icon {
+    color: #ff8c00;
+    font-size: 18px;
+}
+
+.faq-answer-box {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    background: #fdfdfd;
+}
+
+.faq-answer-box.show {
+    max-height: 500px; /* Adjust as needed */
+}
+
+.answer-content {
+    padding: 0 25px 20px 25px;
+    color: #555;
+    line-height: 1.7;
+    font-size: 0.95rem;
+}
+
+/* See More Button */
+.faq-action-area {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.see-more-btn {
+    background: none;
+    border: 2px solid #001f3f;
+    color: #001f3f;
+    padding: 10px 25px;
+    border-radius: 50px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.see-more-btn:hover {
+    background: #0f2647;
+    color: white;
+}
+
+/* WhatsApp Inquiry Box */
+.extra-inquiry-box {
+    margin-top: 50px;
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px dashed #ff8c00;
+}
+
+.inquiry-content h4 {
+    color: #001f3f;
+    margin-bottom: 5px;
+    font-weight: 800;
+}
+
+.inquiry-content p {
+    color: #666;
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.faq-whatsapp-link {
+    background-color: #25d366;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+}
+
+.faq-whatsapp-link:hover {
+    transform: scale(1.05);
+    background-color: #128c7e;
+}
+
+@media (max-width: 768px) {
+    .section-header h3 { font-size: 32px; }
+    .extra-inquiry-box {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+}

@@ -1,0 +1,160 @@
+/* Base Wrapper */
+.read-main-wrapper {
+  background-color: #f8fafc;
+  padding-top: 110px; 
+  padding-bottom: 80px;
+  min-height: 100vh;
+}
+
+/* HERO SECTION: Isko fix kiya gaya hai taaki image na kate */
+.read-hero-section {
+  width: 100%;
+  background: #f1f5f9; /* Light background agar image choti ho */
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  /* Height ko 450px se hata kar min-height kiya taaki image poori aaye */
+  min-height: 300px; 
+  max-height: 600px; 
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.read-hero-image {
+  width: 100%;
+  height: auto; /* Height auto karne se aspect ratio nahi bigdega */
+  max-height: 600px;
+  object-fit: contain; /* Isse image kategi nahi, poori dikhegi */
+  display: block;
+}
+
+/* Main Layout: Grid structure */
+.read-container {
+  width: 90%;
+  max-width: 1300px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 350px; 
+  gap: 30px;
+  align-items: start;
+}
+
+/* Left Content Box */
+.read-content-card {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.05);
+}
+
+.read-cat-tag {
+  color: #ff8c00;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+}
+
+.read-title {
+  font-size: 2.2rem;
+  color: #001f3f;
+  margin: 15px 0;
+  font-weight: 800;
+}
+
+.read-meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  color: #64748b;
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.read-desc {
+  line-height: 1.8;
+  color: #4a5568;
+  font-size: 1.05rem;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+/* RIGHT SIDEBAR: Sticky banaya gaya hai */
+.read-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  position: sticky; 
+  top: 120px; 
+  height: fit-content;
+}
+
+.sidebar-box {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  border: 1px solid #f1f5f9;
+}
+
+.sidebar-box h4 {
+  color: #001f3f;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #ff8c00;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.feature-item-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.price-box-sidebar {
+  background: #fff8f0;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 15px;
+  border: 1px dashed #ff8c00;
+}
+
+.price-text {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #001f3f;
+}
+
+.contact-btn-full {
+  width: 100%;
+  background: #001f3f;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 8px;
+  font-weight: 700;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-btn-full:hover { background: #ff8c00; transform: translateY(-3px); }
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .read-container { grid-template-columns: 1fr; }
+  .read-sidebar { position: static; }
+}
+
+@media (max-width: 768px) {
+  .read-main-wrapper { padding-top: 90px; }
+  .read-content-card { padding: 25px 15px; }
+  .read-hero-section { min-height: 200px; height: auto; }
+  .read-title { font-size: 1.6rem; }
+}

@@ -1,0 +1,130 @@
+.testi-section {
+    padding: 60px 20px !important;
+    /* background-color: #0a1d37;  */
+    text-align: center;
+    color: white;
+    overflow: hidden;
+    margin: 0 !important;
+}
+
+.section-header h3 {
+    font-size: 46px;
+    font-weight: 800;
+    margin-bottom: 10px !important;
+}
+
+.title-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.title-divider .line {
+    width: 50px;
+    height: 2px;
+    background-color: #ff8c00;
+}
+
+.hat-icon {
+    font-size: 20px;
+}
+
+.testi-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testi-slide {
+    height: auto !important;
+    display: flex !important;
+}
+
+.testi-card {
+    background: rgba(255, 255, 255, 0.05); /* Subtle white on #0a1d37 */
+    padding: 35px 25px;
+    border-radius: 15px;
+    text-align: left;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.testi-card:hover {
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateY(-8px);
+    border-color: #ff8c00;
+}
+
+/* TOP SECTION STYLE */
+.testi-top-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 15px;
+}
+
+.student-profile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.testi-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #ff8c00;
+    object-fit: cover;
+}
+
+.name-box h4 {
+    margin: 0;
+    font-size: 18px;
+    color: white;
+    font-weight: 700;
+}
+
+.name-box span {
+    font-size: 13px;
+    color: #bbb;
+}
+
+.stars {
+    color: #ffb400;
+    font-size: 14px;
+    display: flex;
+    gap: 2px;
+}
+
+/* BOTTOM SECTION STYLE */
+.testi-bottom-content {
+    flex-grow: 1;
+}
+
+.quote-icon {
+    font-size: 24px;
+    color: #ff8c00;
+    margin-bottom: 15px;
+    opacity: 0.8;
+}
+
+.testi-text {
+    font-style: italic;
+    line-height: 1.6;
+    color: #ddd;
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+    .section-header h3 { font-size: 32px; }
+    .testi-top-info { flex-direction: column; align-items: flex-start; gap: 10px; }
+    .stars { margin-top: 5px; }
+}

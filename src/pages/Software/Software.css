@@ -1,0 +1,117 @@
+/* Base Layout & Theme */
+.about-page-container {
+  background-color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 1.2rem;
+  color: #ff8c00;
+  font-weight: 700;
+}
+
+/* Hero Section */
+.about-hero {
+  background: linear-gradient(rgba(10, 29, 55, 0.95), rgba(10, 29, 55, 0.95)), 
+              url('https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=1200') no-repeat center/cover;
+  color: white;
+  text-align: center;
+  padding: 120px 20px 80px 20px;
+}
+
+.about-hero h1 { font-size: clamp(24px, 5vw, 40px); font-weight: 800; margin-bottom: 15px; }
+.about-hero h1 span { color: #ff8c00; }
+.about-hero p { font-size: 1.1rem; opacity: 0.9; max-width: 800px; margin: 0 auto; }
+
+/* Wrapper */
+.about-content-wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+/* Header Sections */
+.section-header { text-align: center; margin-bottom: 60px; }
+.section-header h3 { font-size: 2.2rem; color: #001f3f; font-weight: 800; line-height: 1.3; }
+.section-header h3 span { color: #ff8c00; }
+.service-intro-text { color: #555; line-height: 1.8; max-width: 950px; margin: 25px auto; font-size: 1.05rem; text-align: justify; }
+
+.section-title { font-size: 2rem; color: #001f3f; margin-bottom: 40px; text-align: center; font-weight: 700; }
+.section-title span { color: #ff8c00; }
+
+/* Grid Layout - 2 Columns */
+.card-grid-1x2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+/* Card Styling */
+.course-card {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 35px 25px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 30px rgba(10, 29, 55, 0.08);
+  border: 1px solid #f0f0f0;
+  transition: all 0.3s ease;
+}
+
+.course-card:hover { 
+  transform: translateY(-10px); 
+  box-shadow: 0 15px 35px rgba(10, 29, 55, 0.15);
+}
+
+.card-top-icon {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.course-card h3 {
+  font-size: 1.4rem;
+  color: #001f3f;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.justify-p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* Action Button */
+.contact-btn-full {
+  width: 100%;
+  background: #001f3f;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 1rem;
+}
+
+.contact-btn-full:hover {
+  background: #ff8c00;
+  box-shadow: 0 5px 15px rgba(255, 140, 0, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .card-grid-1x2 { grid-template-columns: 1fr; }
+  .about-hero h1 { font-size: 2rem; }
+}
+
+@media (max-width: 600px) {
+  .about-hero { padding: 100px 15px 60px 15px; }
+}

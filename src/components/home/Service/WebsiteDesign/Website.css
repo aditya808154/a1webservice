@@ -1,0 +1,101 @@
+.other-section {
+  padding: 20px 10px; 
+  background-color: #fcfcfc;
+  text-align: center;
+  margin: 30px;
+}
+
+.other-title {
+  font-size: 2.5rem;
+  color: #1a2b4b;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.other-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.other-card {
+  background: white;
+  padding: 35px 20px;
+  border-radius: 15px;
+  box-shadow: 10px 5px 30px 5px rgba(26, 43, 75, 0.18) !important; 
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  transition: all 0.3s ease;
+  border: 1px solid #f0f0f0;
+}
+
+.other-card:hover {
+  transform: translateY(-10px);
+      box-shadow: 0px 5px 30px 1px #1a3a8f !important; 
+}
+
+.ai-features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 25px 0;
+  text-align: left;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.ai-features-list li {
+  color: #555;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.ai-check {
+  color: #ff851b;
+  margin-right: 8px;
+  font-weight: bold;
+}
+
+.ai-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: auto;
+}
+
+.ai-price-tag {
+  background-color: #f8f9fa;
+  color: #1a3a8f;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-weight: 700;
+  border: 1px dashed #ccc;
+}
+
+.other-whatsapp-btn {
+  background-color: #ff851b; 
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+.other-whatsapp-btn:hover {
+  background-color: #001f3f;
+}
+
+@media (max-width: 1100px) {
+  .other-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 650px) {
+  .other-grid { grid-template-columns: 1fr; }
+  .other-title { font-size: 1.8rem; }
+}

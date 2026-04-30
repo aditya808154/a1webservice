@@ -1,0 +1,228 @@
+.courses-wrapper {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    background-color: #f9fbff;
+    text-align: center;
+    display: block;
+    overflow: hidden;
+    /* Excess margin ko kill karne ke liye */
+}
+
+#dg
+ {
+    background: linear-gradient(rgba(10, 29, 55, 0.6), rgba(10, 29, 55, 0.95)),
+        url('../../assets/image/bb.webp') no-repeat center/cover !important;
+    color: white;
+    text-align: center;
+    padding: 120px 20px 80px 20px;
+}
+
+.other-section {
+    /* margin-top: 0px !important;
+    margin-bottom: 10px !important; 
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    margin-left: 5px !important;
+    margin-right: 5px !important; */
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    padding: 0px !important;
+}
+
+.section-header {
+    /* margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important; */
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+.section-header h3 {
+    font-size: 46px;
+    color: #001f3f;
+    /* Browser default margin ko puri tarah hatane ke liye 0 !important */
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.section-header span {
+    color: #ff8c00;
+}
+
+.section-header p {
+    /* Heading aur slider ke beech ka gap yahan se control hota hai */
+    margin-top: 5px !important;
+    margin-bottom: 15px !important;
+    color: #666;
+    font-size: 1rem;
+    padding: 0 !important;
+}
+
+.course-slider-container {
+    max-width: 1200px;
+    margin-top: 0px !important;
+    /* Slider ko header se chipka diya */
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-top: 0px !important;
+    padding-bottom: 35px !important;
+}
+
+/* Baki style same rakha hai */
+.course-slide {
+    height: auto !important;
+    display: flex !important;
+}
+
+.other-card {
+    background: white;
+    padding: 20px 20px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    transition: all 0.3s ease;
+    box-shadow: 10px 5px 30px 5px rgba(26, 43, 75, 0.18) !important;
+}
+
+.other-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 5px 30px 1px #1a3a8f !important;
+}
+
+.course-icon {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 15px;
+    object-fit: contain;
+}
+
+.card-title {
+    font-size: 1rem;
+    color: #001f3f;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.card-duration {
+    font-size: 0.8rem;
+    color: #666;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.features-container {
+    text-align: left;
+    width: 100%;
+    flex-grow: 1;
+    margin-bottom: 25px;
+}
+
+.feature-item {
+    color: #555;
+    font-size: 0.8rem;
+    line-height: 1.6;
+    display: flex;
+    align-items: flex-start;
+}
+
+.tick-icon {
+    color: #ff8c00;
+    margin-right: 8px;
+    font-weight: bold;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: auto;
+}
+
+.price-label {
+    background-color: #f8f9fa;
+    color: #001f3f;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    border: 1px dashed #ccc;
+    font-size: 0.8rem;
+}
+
+.other-whatsapp-btn {
+    background-color: #ff851b;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background 0.3s;
+    display: inline-block;
+    border: none;
+    padding: 10px 20px;
+    font-size: 0.7rem;
+    width: auto;
+}
+
+.other-whatsapp-btn:hover {
+    background-color: #1a2b4b;
+}
+
+.swiper-pagination-bullet-active {
+    background: #ff8c00 !important;
+}
+
+@media screen and (max-width: 768px) {
+    .courses-wrapper {
+        padding: 0px 15px !important;
+    }
+
+    .section-header h3 {
+        font-size: 32px;
+    }
+
+    .course-slider-container {
+        margin: 0 auto !important;
+        padding-bottom: 25px !important;
+    }
+}
+
+/* Tablet aur Phone ke liye width adjust ki gayi hai */
+@media screen and (max-width: 1024px) {
+    .course-slider-container {
+        width: 95%;
+        /* Tablet par thoda zyada space cover karega */
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .courses-wrapper {
+        padding: 10px 0px !important;
+        /* Wrapper ka extra padding hataya */
+    }
+
+    .course-slider-container {
+        width: 92%;
+        /* Phone par card thoda bada dikhe isliye width badha di */
+        margin: 0 auto !important;
+        padding-bottom: 30px !important;
+    }
+
+    .section-header h3 {
+        font-size: 28px;
+        padding: 0 10px;
+    }
+
+    /* Card ke andar ka content phone par sahi dikhne ke liye */
+    .other-card {
+        padding: 25px 20px;
+        /* Card ki height/spacing badhayi */
+    }
+}

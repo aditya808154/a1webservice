@@ -1,0 +1,102 @@
+.dm-section {
+  /* Padding top aur bottom dono 20px kar di hai gap khatam karne ke liye */
+  padding: 20px 5% 20px 5%; 
+  background-color: #fcfcfc;
+  text-align: center;
+  min-height: auto; 
+  /* Isse ensure hoga ki koi extra margin na ho */
+  margin: 0;
+}
+
+.dm-title {
+  font-size: 2.2rem;
+  color: #1a2b4b;
+  /* Title ke upar ka margin 0 kar diya taaki pichle section se chipak jaye */
+  margin: 0px 0 30px 0;
+  padding-top: 20px;
+  font-weight: 700;
+}
+
+.dm-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.dm-card {
+  background: white;
+  padding: 40px 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  transition: transform 0.3s ease;
+  border: 1px solid #f0f0f0;
+}
+
+.dm-card:hover {
+  transform: translateY(-5px);
+}
+
+.dm-icon-wrapper {
+  margin-bottom: 20px;
+  height: 60px;
+}
+
+.dm-icon {
+  font-size: 50px;
+}
+
+.dm-card h3 {
+  font-size: 1.5rem;
+  color: #000;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.dm-desc-left {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  flex-grow: 1;
+  text-align: left; 
+  width: 100%;
+}
+
+.dm-whatsapp-btn {
+  background-color: #ff851b; 
+  color: white;
+  text-decoration: none;
+  padding: 12px 10px;
+  border-radius: 4px;
+  font-weight: 600;
+  width: 100%;
+  font-size: 0.85rem;
+  display: inline-block;
+  transition: background 0.3s;
+  text-align: center;
+}
+
+.dm-whatsapp-btn:hover {
+  background-color: #001f3f;
+  color: white;
+}
+
+@media (max-width: 1200px) {
+  .dm-grid { grid-template-columns: repeat(3, 1fr); gap: 15px; }
+}
+
+@media (max-width: 992px) {
+  .dm-grid { grid-template-columns: repeat(2, 1fr); }
+  .dm-title { font-size: 1.8rem; }
+}
+
+@media (max-width: 650px) {
+  .dm-grid { grid-template-columns: 1fr; }
+  .dm-section { padding: 20px 20px; }
+  .dm-title { font-size: 1.5rem; margin-bottom: 20px; }
+}

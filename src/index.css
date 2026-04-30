@@ -1,0 +1,177 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Isse padding width ke andar calculate hoti hai */
+ 
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif; /* Ya jo bhi aap use kar rahe ho */
+  /* background-color: ; */
+}
+.section-title{
+  color: #0a1d37 !important;
+}
+#h{
+  justify-content: center;
+}
+/* Pura website ke liye ek sath */
+h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.3;
+  text-align: center !important;
+}
+
+h2 {
+  font-size: 2rem ;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+h3 {
+  font-size:1.3rem ;
+  font-weight: 700;
+}
+
+
+
+
+
+h6 {
+  font-size: 0.55rem !important;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* p {
+  font-size: 0.8rem;
+  
+  
+  
+} */
+
+/* style={{  margin: '6px 0', color: '#444', display: 'flex', alignItems: 'flex-start' }} */
+@media (max-width: 600px) {
+  h1, p {
+    text-align: left;
+    padding-left: 10px; /* Thoda sa gap dena accha lagta hai taaki screen se chipke nahi */
+  }
+}
+
+
+
+/* ================================================== */
+/* ===== Contact Header Section ===== */
+.contact-header {
+  width: 100%;
+  background: #1f3c88; /* blue bg jaise screenshot */
+  display: flex;
+  justify-content: center;
+}
+
+/* Center container */
+.contact-container {
+  width: 100%;
+  max-width: 1300px;
+
+  padding: 60px 20px;   /* height ka kaam padding karega */
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Heading */
+.contact-container h1 {
+  font-size: clamp(22px, 4vw, 42px);
+  line-height: 1.3;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+/* Paragraph */
+.contact-container p {
+  font-size: clamp(14px, 2.6vw, 18px);
+  max-width: 900px;
+  line-height: 1.6;
+  color: #eaeaea;
+}
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 80px 16px;   /* content jitna ho utni height */
+  }
+}
+@media (min-width: 1024px) {
+  .contact-container {
+    min-height: 350px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  outline: none;
+}
+
+/* Global Container jo har page/section ko side se space dega */
+.main-layout-wrapper {
+    width: 100%;
+    max-width: 1440px; /* Badi screens par content ko failne se rokega */
+    margin: 0 auto;    /* Content ko hamesha center mein rakhega */
+    padding-left: 8%;  /* Left side space */
+    padding-right: 8%; /* Right side space */
+    box-sizing: border-box;
+}
+
+/* Tablet view par space thoda kam */
+@media (max-width: 1024px) {
+    .main-layout-wrapper {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+/* Mobile view par space aur kam taaki content bada dikhe */
+@media (max-width: 768px) {
+    .main-layout-wrapper {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+
+/* #main{
+  max-width: 1300px;
+  margin-left:50px !important;
+  margin-right:50px !important;
+  padding: 10px 20px !important;
+  width: 90%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* .about-content-wrapper {
+    max-width: 1300px !important;
+    margin-left: auto !important;
+    margin-right: 0 !important;
+    padding: 20px 20px 20px 80px !important;
+    box-sizing: border-box !important;
+    display: block;
+  } */
+
+  /* Mobile ke liye alignment wapas theek karne ke liye */
+  /* @media (max-width: 768px) {
+    .about-content-wrapper {
+      padding: 20px !important;
+      margin: 0 auto !important;
+    }
+  } */

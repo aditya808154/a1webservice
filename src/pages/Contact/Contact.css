@@ -1,0 +1,110 @@
+/* Contact Page Base Theme (Same as WebsiteDesign) */
+.about-page-container {
+  background-color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Hero Section */
+.about-hero {
+  background: linear-gradient(rgba(10, 29, 55, 0.95), rgba(10, 29, 55, 0.95)), 
+              url('https://images.unsplash.com/photo-1523966211575-eb4a01e7dd51?q=80&w=1200') no-repeat center/cover;
+  color: white;
+  text-align: center;
+  padding: 120px 20px 80px 20px;
+}
+
+.about-hero h1 span { color: #ff8c00; }
+
+/* Wrapper */
+.about-content-wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+/* Card Styling */
+.branch-tag-new {
+  display: inline-block;
+  background: #fdf2e9;
+  color: #ff8c00;
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  align-self: flex-start;
+}
+
+.course-card {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 35px 25px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 30px rgba(10, 29, 55, 0.08);
+  border: 1px solid #f0f0f0;
+  transition: all 0.3s ease;
+}
+
+/* Map Styling */
+.map-container-new {
+  padding: 10px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.06);
+  border: 1px solid #eee;
+}
+
+/* Form Styling */
+.form-inner-card {
+  background: #f9f9f9;
+  padding: 50px;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.input-group-new {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.input-group-new input, textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-family: inherit;
+  outline: none;
+  transition: 0.3s;
+}
+
+.input-group-new input:focus, textarea:focus {
+  border-color: #ff8c00;
+  box-shadow: 0 0 10px rgba(255, 140, 0, 0.1);
+}
+
+.contact-btn-full {
+  background: #001f3f;
+  color: white;
+  border: none;
+  padding: 14px 25px;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-btn-full:hover {
+  background: #ff8c00;
+  box-shadow: 0 5px 15px rgba(255, 140, 0, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .card-grid-1x2 { grid-template-columns: 1fr; }
+  .input-group-new { grid-template-columns: 1fr; }
+  .form-inner-card { padding: 30px 10px; }
+}
